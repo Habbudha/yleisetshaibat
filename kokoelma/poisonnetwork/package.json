@@ -1,0 +1,21 @@
+{
+  "name": "postipckg",
+  "version": "1.0.0",
+  "description": "postaus jarjestelma",
+  "main": "main.js",
+  "scripts": {
+    "test": "\"test\": \"echo \"Error: no test specified\" && exit 1\""
+  },
+  "author": "Taneli",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-handlebars": "^4.0.4",
+    "mongoose": "^5.9.19",
+    "mysql": "^2.18.1",
+    "multer": "^1.3.0"
+  }
+}

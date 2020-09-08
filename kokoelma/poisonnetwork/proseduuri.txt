@@ -1,0 +1,21 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `poistataimuokkaa`(
+IN _id INT,
+IN _otsikko VARCHAR(255),
+IN _sisalto VARCHAR(255)
+)
+BEGIN
+
+IF id = 0 THEN
+INSERT INTO post(id,otsikko,sisalto)
+VALUES (_id,_otsikko,_sisalto);
+SET _id = last_insert_id();
+ELSE
+UPDATE post
+SET
+otsikko = _otsikko,
+sisalto = _sisalto
+WHERE id = _id;
+END IF;
+SELECT _id AS 'id';
+
+END

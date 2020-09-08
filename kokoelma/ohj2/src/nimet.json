@@ -1,0 +1,10 @@
+{
+"velalliset": [
+	{ "id": 1, 
+	"nimi": "Lando", 
+	"puhelin": 1212324}, 
+	{ 
+	"id" : 2, 
+	"nimi" : "Spata", 
+	"puhelin" : 1337666} 
+]}}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="387.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ht.Ls1kayttisController">
+   <top>
+      <ButtonBar prefHeight="45.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleLisaa" text="Lisää" />
+            <Button mnemonicParsing="false" onAction="#handleKuittaus" text="Kuittaa" />
+            <Button mnemonicParsing="false" onAction="#handlePoisto" text="Poista" />
+            <Button mnemonicParsing="false" onAction="#handleMuokkaus" text="Muokkaa" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets right="500.0" />
+         </BorderPane.margin>
+      </ButtonBar>
+   </top>
+   <bottom>
+      <Pane prefHeight="0.0" prefWidth="825.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox prefHeight="342.0" prefWidth="157.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Haku" />
+            <TextField opacity="0.75" prefHeight="25.0" prefWidth="129.0" text="Lando">
+               <VBox.margin>
+                  <Insets bottom="2.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="299.0" prefWidth="123.0">
+               <children>
+                  <ListChooser />
+                  <ScrollBar orientation="VERTICAL" />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="342.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Loki" />
+            <ListView prefHeight="200.0" prefWidth="200.0" />
+            <Label text="Kuvas velasta" />
+            <ListView prefHeight="200.0" prefWidth="200.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ListView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+         </BorderPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Velanottaja" />
+            <TextField text="Lando Carassian">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Velan summa" />
+            <TextField text="300">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Puhelinnumero" />
+            <TextField text="050 123 123 12">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Sovittu maksupäivä" />
+            <TextField text="06.06.18" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="30.0" right="30.0" top="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
